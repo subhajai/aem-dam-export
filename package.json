@@ -1,0 +1,20 @@
+{
+  "name": "aem-assets-export",
+  "version": "1.0.0",
+  "description": "A tool to export assets from AEM",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=prod node export-assets.js",
+    "prod": "NODE_ENV=prod node export-assets.js",
+    "uat": "NODE_ENV=uat node export-assets.js"
+  },
+  "author": "Subhajai Benchadhikul",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "dotenv-flow": "^4.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "node-fetch": "^2.6.1",
+    "p-queue": "^7.1.0"
+  }
+}
