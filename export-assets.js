@@ -127,7 +127,7 @@ async function downloadFile(url, outputPath) {
  * @param {String} options.localPath the local path to save the downloaded assets
  * @param {String} options.aemPath the AEM path of the folder to download
  */
-async function downloadAssets({ apiUrl, localPath = LOCAL_DOWNLOAD_FOLDER, aemPath = process.env.AEM_ASSETS_FOLDER }) {
+async function downloadAssets({ apiUrl, localPath = LOCAL_DOWNLOAD_FOLDER, aemPath = AEM_ASSETS_FOLDER }) {
     console.log(`Starting downloadAssets with apiUrl: ${apiUrl}, localPath: ${localPath}, aemPath: ${aemPath}`);
     if (!apiUrl) {
         const prefix = "/content/dam/";
